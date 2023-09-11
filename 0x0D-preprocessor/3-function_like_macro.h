@@ -1,10 +1,7 @@
-#include <stdio.h>
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 
-#define ABS(x) ((x) < 0 ? -(x) : (x))
+#define ABS(x) ((x) < (0) ? -(x) : (x))
 
-int main() {
-    int num = -5;
-    int result = ABS(num);
-    printf("Absolute value of %d is %d\n", num, result);
-    return 0;
-}
+#endif
+
