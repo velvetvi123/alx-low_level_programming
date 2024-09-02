@@ -1,23 +1,21 @@
 #include <stdio.h>
 
+/**
+ * main- Entry point
+ * @void: Null value
+ *
+ * Description: Print alphabet lowercase
+ * Return: Zero value
+ */
+
 int main(void)
 {
-    char lowercase = 'a';
-    char uppercase = 'A';
+	char c, b;
 
-    while (lowercase <= 'z')
-    {
-        putchar(lowercase);
-        lowercase++;
-    }
-
-    while (uppercase <= 'Z')
-    {
-        putchar(uppercase);
-        uppercase++;
-    }
-
-    putchar('\n'); // Print a new line
-
-    return 0;
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
+	for (b = 'A'; b <= 'Z'; b++)
+		putchar(b);
+	putchar('\n');
+	return (0);
 }

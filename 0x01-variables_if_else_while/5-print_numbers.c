@@ -1,16 +1,19 @@
 #include <stdio.h>
 
+/**
+ * main- Entry point
+ * @void: Null value
+ *
+ * Description: Print numbers from 0 to 9
+ * Return: Zero value
+ */
+
 int main(void)
 {
-    char digit = '0';
+	int n;
 
-    while (digit <= '9')
-    {
-        putchar(digit);
-        digit++;
-    }
-
-    putchar('\n'); // Print a new line
-
-    return 0;
+	for (n = 0; n <= 9; n++)
+		printf("%d", n);
+	printf("\n");
+	return (0);
 }

@@ -1,19 +1,23 @@
 #include <stdio.h>
 
+/**
+ * main- Entry point
+ * @void: Null value
+ *
+ * Description: Print alphabet lowercase
+ * Return: Zero value
+ */
+
 int main(void)
 {
-    char letter = 'a';
+	char c;
 
-    while (letter <= 'z')
-    {
-        if (letter != 'e' && letter != 'q')
-        {
-            putchar(letter);
-        }
-        letter++;
-    }
-
-    putchar('\n'); // Print a new line
-
-    return 0;
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		if (c == 'q' || c == 'e')
+			continue;
+		putchar(c);
+	}
+	putchar('\n');
+	return (0);
 }

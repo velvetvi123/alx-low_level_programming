@@ -1,55 +1,26 @@
 #include <stdio.h>
 
+/**
+ * main- Entry point
+ * @void: Null value
+ *
+ * Description: Print numbers from 0 to 9 separated by comma and space
+ * Return: Zero value
+ */
+
 int main(void)
 {
-    putchar('0');
-    putchar(',');
+	int n;
 
-    putchar(' ');
-
-    putchar('1');
-    putchar(',');
-
-    putchar(' ');
-
-    putchar('2');
-    putchar(',');
-
-    putchar(' ');
-
-    putchar('3');
-    putchar(',');
-
-    putchar(' ');
-
-    putchar('4');
-    putchar(',');
-
-    putchar(' ');
-
-    putchar('5');
-    putchar(',');
-
-    putchar(' ');
-
-    putchar('6');
-    putchar(',');
-
-    putchar(' ');
-
-    putchar('7');
-    putchar(',');
-
-    putchar(' ');
-
-    putchar('8');
-    putchar(',');
-
-    putchar(' ');
-
-    putchar('9');
-
-    putchar('\n'); // Print a new line
-
-    return 0;
+	for (n = '0'; n <= '9'; n++)
+	{
+		putchar(n);
+		if (n != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
 }

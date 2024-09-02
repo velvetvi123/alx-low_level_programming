@@ -1,24 +1,22 @@
 #include <stdio.h>
 
+/**
+ * main- Entry point
+ * @void: Null value
+ *
+ * Description: Print numbers of base 16
+ * Return: Zero value
+ */
+
 int main(void)
 {
-    char digit = '0';
+	char c;
+	int n;
 
-    while (digit <= '9')
-    {
-        putchar(digit);
-        digit++;
-    }
-
-    char lowercaseLetter = 'a';
-
-    while (lowercaseLetter <= 'f')
-    {
-        putchar(lowercaseLetter);
-        lowercaseLetter++;
-    }
-
-    putchar('\n'); // Print a new line
-
-    return 0;
+	for (n = '0'; n <= '9'; n++)
+		putchar(n);
+	for (c = 'a'; c <= 'f'; c++)
+		putchar(c);
+	putchar('\n');
+	return (0);
 }
