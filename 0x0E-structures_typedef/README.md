@@ -1,1 +1,1 @@
-This is structures type def project
+0x0E-structures_typedef
